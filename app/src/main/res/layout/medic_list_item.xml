@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_medium"
+    app:cardElevation="4dp"
+    app:strokeWidth="1dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_medium">
+
+       <ImageView
+           android:id="@+id/medicImage"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:contentDescription="@null"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           tools:srcCompat="@drawable/ic_patient"/>
+
+        <TextView
+            android:id="@+id/medicName"
+            style="@style/ConsultHub.TextStyle.SubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_small"
+            android:layout_marginTop="@dimen/space_small"
+            android:text="@string/user"
+            app:layout_constraintStart_toEndOf="@id/medicImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space_small"
+            app:layout_constraintStart_toStartOf="@id/medicName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@id/medicName"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/specialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:text="@string/specialty"/>
+
+            <View
+                android:id="@+id/divider"
+                style="@style/Widget.ConsultHub.Divider"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/space_small"
+                android:layout_marginEnd="@dimen/space_small" />
+
+            <TextView
+                android:id="@+id/document"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                tools:text="Doc:123DcL-23"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

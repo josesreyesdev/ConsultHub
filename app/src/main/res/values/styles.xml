@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ConsultHub" />
+
+    <style name="ConsultHub.TextStyle">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="ConsultHub.TextStyle.SubTitle">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ConsultHub.TextStyle.Title">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <!--<item name="android:textColor">@color/textPrimary</item> -->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ConsultHub.TextStyle.Link">
+        <item name="android:textColor">@color/textLink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DatePickerTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">#A493C3</item>
+    </style>
+
+    <style name="Widget.ConsultHub.Divider" parent="">
+        <item name="android:background">?attr/dividerVertical</item>
+    </style>
+</resources>
