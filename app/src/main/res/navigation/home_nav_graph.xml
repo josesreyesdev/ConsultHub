@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph.xml"
+    app:startDestination="@id/medicListFragment2">
+
+    <fragment
+        android:id="@+id/medicListFragment2"
+        android:name="com.jsrdev.consulthub.ui.medic.MedicListFragment"
+        android:label="fragment_medic_list"
+        tools:layout="@layout/fragment_medic_list" >
+        <action
+            android:id="@+id/action_medicListFragment2_to_medicDetailFragment"
+            app:destination="@id/medicDetailFragment" />
+        <action
+            android:id="@+id/action_medicListFragment2_to_medicDetailFragment2"
+            app:destination="@id/medicDetailFragment" />
+        <action
+            android:id="@+id/action_medicListFragment2_to_addMedicFragment"
+            app:destination="@id/addMedicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/medicDetailFragment"
+        android:name="com.jsrdev.consulthub.ui.medic.MedicDetailFragment"
+        android:label="fragment_medic_detail"
+        tools:layout="@layout/fragment_medic_detail" />
+    <fragment
+        android:id="@+id/addMedicFragment"
+        android:name="com.jsrdev.consulthub.ui.medic.AddMedicFragment"
+        android:label="fragment_add_medic"
+        tools:layout="@layout/fragment_add_medic" />
+</navigation>

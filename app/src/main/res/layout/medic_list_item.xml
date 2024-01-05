@@ -21,7 +21,7 @@
            android:contentDescription="@null"
            app:layout_constraintStart_toStartOf="parent"
            app:layout_constraintTop_toTopOf="parent"
-           tools:srcCompat="@drawable/ic_patient"/>
+           tools:src="@drawable/ic_patient"/>
 
         <TextView
             android:id="@+id/medicName"
