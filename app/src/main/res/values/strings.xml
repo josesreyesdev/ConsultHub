@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Consult Hub</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Medic-->
+    <string name="user">Jose SR</string>
+    <string name="specialty">Cardiologia</string>
+    <string name="search">Buscar</string>
+    <string name="image_state">Cargando</string>
+    <string name="add_new_item">Agregar</string>
+
+    <!-- BottomBar -->
+    <string name="medics">Médicos</string>
+    <string name="patients">Pacientes</string>
+    <string name="consults">Consultas</string>
+
+    <!-- Login -->
+    <string name="feat_login_new_to_consult_hub">New to the ConsultHub?</string>
+    <string name="feat_login_register">Register</string>
+    <string name="feat_login_google">Login with Google</string>
+    <string name="feat_login_or">OR</string>
+    <string name="feat_login_login">Login</string>
+    <string name="feat_login_forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="feat_login_hint_email">Email</string>
+    <string name="feat_login_title">Login</string>
+
+
 </resources>
