@@ -4,8 +4,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Medic-->
-    <string name="user">Jose SR</string>
-    <string name="specialty">Cardiologia</string>
+    <string name="temp_user">Jose SR</string>
+    <string name="temp_specialty">Cardiologia</string>
+    <string name="temp_document">A21–412</string>
     <string name="search">Buscar</string>
     <string name="image_state">Cargando</string>
     <string name="add_new_item">Agregar</string>

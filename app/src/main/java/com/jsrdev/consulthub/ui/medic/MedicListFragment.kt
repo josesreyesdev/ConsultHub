@@ -40,11 +40,11 @@ class MedicListFragment : Fragment() {
          repeat(10) {
             items.addAll(
                 listOf(
-                    GetMedicResponse(1, "San José", Specialty.CARDIOLOGIA, "31233", "sanjose@example.com"),
-                    GetMedicResponse(2, "San Marcos", Specialty.PEDIATRIA, "41241", "sanmarcos@example.com"),
-                    GetMedicResponse(3, "San Piter", Specialty.ORTOPEDIA, "624432", "sanpiter@example.com"),
-                    GetMedicResponse(3, "Santa Maria", Specialty.GINECOLOGIA, "89890", "santamaria@example.com"),
-                    GetMedicResponse(3, "Santa Ines", Specialty.ODONTOLOGIA, "88080", "santaines@example.com")
+                    GetMedicResponse(1, "San José José", Specialty.CARDIOLOGIA, "A2-3233"),
+                    GetMedicResponse(2, "San Marcos San Marcos", Specialty.PEDIATRIA, "41-AD241"),
+                    GetMedicResponse(3, "San Piter San Piter", Specialty.ORTOPEDIA, "6244FS2"),
+                    GetMedicResponse(4, "Santa Maria Santa Maria", Specialty.GINECOLOGIA, "89-D890"),
+                    GetMedicResponse(5, "Santa Ines Santa Ines", Specialty.ODONTOLOGIA, "88-EF080")
                 )
             )
         }

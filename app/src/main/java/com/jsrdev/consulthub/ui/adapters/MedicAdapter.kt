@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.jsrdev.consulthub.R
 import com.jsrdev.consulthub.core.Constants
-import com.jsrdev.consulthub.core.Specialty
 import com.jsrdev.consulthub.data.network.model.GetMedicResponse
 import com.jsrdev.consulthub.databinding.MedicListItemBinding
 
@@ -26,9 +25,11 @@ class MedicAdapter(private val onItemClicked: (GetMedicResponse) -> Unit )
                 }
             }
 
-            binding.medicName.text = "Jose SR"
-            binding.specialty.text = Specialty.CARDIOLOGIA.toString()
-            binding.document.text = "Doc: A12-41ASD"
+            binding.apply {
+                name.text = medic.name
+                specialty.text = medic.specialty?.name ?: "Not Found Specialty"
+                document.text = medic.document
+            }
         }
     }
 
