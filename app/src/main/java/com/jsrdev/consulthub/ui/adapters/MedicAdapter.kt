@@ -16,6 +16,17 @@ class MedicAdapter(private val onItemClicked: (GetMedicResponse) -> Unit )
     : ListAdapter<GetMedicResponse, MedicAdapter.MedicViewHolder>(DiffCallback) {
     class MedicViewHolder(private var binding: MedicListItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(medic: GetMedicResponse) {
+
+            medic.name?.let { name ->
+                binding.name.text = name
+            }
+            medic.specialty?.name.let{ specialty ->
+                binding.specialty.text = specialty
+            }
+            medic.document?.let { document ->
+                binding.document.text = document
+            }
+
             val imgUrl: String = Constants.TEMPORAL_URL_IMAGE
             imgUrl.let {
                 val imgUri = imgUrl.toUri().buildUpon().scheme("https").build()
@@ -23,12 +34,6 @@ class MedicAdapter(private val onItemClicked: (GetMedicResponse) -> Unit )
                     placeholder(R.drawable.loading_animation)
                     error(R.drawable.ic_broken_image)
                 }
-            }
-
-            binding.apply {
-                name.text = medic.name
-                specialty.text = medic.specialty?.name ?: "Not Found Specialty"
-                document.text = medic.document
             }
         }
     }

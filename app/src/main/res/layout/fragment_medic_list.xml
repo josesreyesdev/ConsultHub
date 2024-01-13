@@ -30,8 +30,8 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space_extra_small"
-        android:layout_margin="@dimen/space_extra_small"
+        android:layout_marginStart="@dimen/space_extra_small"
+        android:layout_marginEnd="@dimen/space_small"
         app:layout_constraintTop_toBottomOf="@id/search"
         tools:listitem="@layout/medic_list_item"/>
 
