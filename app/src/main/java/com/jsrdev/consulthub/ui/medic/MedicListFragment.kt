@@ -37,14 +37,18 @@ class MedicListFragment : Fragment() {
 
         val items = mutableListOf<GetMedicResponse>()
 
-         repeat(10) {
+         repeat(5) {
             items.addAll(
                 listOf(
-                    GetMedicResponse(1, "San José", Specialty.CARDIOLOGIA, "31233", "sanjose@example.com"),
-                    GetMedicResponse(2, "San Marcos", Specialty.PEDIATRIA, "41241", "sanmarcos@example.com"),
-                    GetMedicResponse(3, "San Piter", Specialty.ORTOPEDIA, "624432", "sanpiter@example.com"),
-                    GetMedicResponse(3, "Santa Maria", Specialty.GINECOLOGIA, "89890", "santamaria@example.com"),
-                    GetMedicResponse(3, "Santa Ines", Specialty.ODONTOLOGIA, "88080", "santaines@example.com")
+                    GetMedicResponse(7, "Juan Pérez", Specialty.PEDIATRIA, "12345"),
+                    GetMedicResponse(8, "Ana González", Specialty.ORTOPEDIA, "67890-Axx-67890"),
+                    GetMedicResponse(9, "Carlos Rodriguez", Specialty.GINECOLOGIA, "54321"),
+                    GetMedicResponse(10, "Laura Hernandez", Specialty.ODONTOLOGIA, "98765"),
+                    GetMedicResponse(11, "Javier Gutierrez", Specialty.CARDIOLOGIA, "246-Abv80"),
+                    GetMedicResponse(12, "Sofía López", Specialty.PEDIATRIA, "97531"),
+                    GetMedicResponse(13, "Andrés Smith", Specialty.ORTOPEDIA, "86420"),
+                    GetMedicResponse(14, "Isabel García", Specialty.GINECOLOGIA, "64239"),
+                    GetMedicResponse(15, "Roberto Navarro", Specialty.ODONTOLOGIA, "87456")
                 )
             )
         }

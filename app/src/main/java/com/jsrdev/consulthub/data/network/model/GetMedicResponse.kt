@@ -7,6 +7,5 @@ data class GetMedicResponse(
     @Json(name = "id") val id: Int,
     @Json(name = "name") val name: String? = null,
     @Json(name = "specialty") val specialty: Specialty? = null,
-    @Json(name = "document") val document: String? = null,
-    @Json(name = "email") val email: String? = null
+    @Json(name = "document") val document: String? = null
 )

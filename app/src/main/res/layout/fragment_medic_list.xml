@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/space_medium"
+    android:layout_margin="@dimen/space_small"
     tools:context=".ui.medic.MedicListFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/search"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_small"
         android:hint="@string/search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,12 +28,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space_small"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/space_extra_small"
+        android:layout_marginEnd="@dimen/space_small"
         app:layout_constraintTop_toBottomOf="@id/search"
-        app:layout_constraintEnd_toEndOf="parent"
         tools:listitem="@layout/medic_list_item"/>
 
     <ImageView

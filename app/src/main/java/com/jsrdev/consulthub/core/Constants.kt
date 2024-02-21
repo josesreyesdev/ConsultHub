@@ -6,5 +6,5 @@ object Constants {
     const val TOKEN_CONSULT_HUB = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKb3NlU1IiLCJpc3MiOiJqc3JfZGV2IiwiaWQiOjEsImV4cCI6MTcwMDc5NzkwN30.VdUbr0IDXnrRiBXxKYs_qQ-QrrMBNPL2vwQSnVt6nsw"
 
     //temporal img
-    const val TEMPORAL_URL_IMAGE = "https://img.freepik.com/vector-gratis/sintomas-virus-caracteres-atencion-medica-establecen-vector_53876-169030.jpg?t=st=1701473367~exp=1701473967~hmac=adcaec7736795d88e5b33da8cba0ae098806220c3cd272b132ff2a3af7be497e"
+    const val TEMPORAL_URL_IMAGE = "https://img.freepik.com/fotos-premium/concepto-laboratorio-investigacion-doctor-investigando-nuevos-tratamientos-laboratorio-medicina-ia-generativa_199064-2081.jpg?w=740"
 }

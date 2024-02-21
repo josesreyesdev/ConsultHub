@@ -14,61 +14,68 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/space_medium">
 
-       <ImageView
-           android:id="@+id/medicImage"
-           android:layout_width="80dp"
-           android:layout_height="80dp"
-           android:contentDescription="@null"
-           app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toTopOf="parent"
-           tools:src="@drawable/ic_patient"/>
+        <ImageView
+            android:id="@+id/medicImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:contentDescription="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_patient"
+            tools:srcCompat="@drawable/ic_patient"/>
 
         <TextView
-            android:id="@+id/medicName"
+            android:id="@+id/name"
             style="@style/ConsultHub.TextStyle.SubTitle"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/space_small"
+            android:layout_marginStart="@dimen/space_extra_small"
             android:layout_marginTop="@dimen/space_small"
-            android:text="@string/user"
-            app:layout_constraintStart_toEndOf="@id/medicImage"
+            android:padding="@dimen/space_extra_small"
+            android:singleLine="true"
+            android:text="@string/temp_user"
+            app:layout_constraintStart_toEndOf="@+id/medicImage"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@string/temp_user" />
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="@dimen/space_small"
-            app:layout_constraintStart_toStartOf="@id/medicName"
+            android:layout_marginStart="@dimen/space_extra_small"
+            app:layout_constraintStart_toStartOf="@id/name"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintTop_toBottomOf="@id/medicName"
+            app:layout_constraintTop_toBottomOf="@id/name"
             app:layout_constraintEnd_toEndOf="parent">
 
             <TextView
                 android:id="@+id/specialty"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                android:text="@string/specialty"/>
+                android:text="@string/temp_specialty"/>
 
-            <!--<View
+            <View
                 android:id="@+id/divider"
                 style="@style/Widget.ConsultHub.Divider"
                 android:layout_width="2dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="@dimen/space_small"
-                android:layout_marginEnd="@dimen/space_small" /> -->
+                android:layout_marginEnd="@dimen/space_small" />
 
             <TextView
                 android:id="@+id/document"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/space_medium"
+                android:text="@string/temp_document"
+                android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                 tools:text="Doc:123DcL-23"/>
         </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
